@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — AliaBeauty</title>
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-full.png" alt="Logo AliaBeauty">
+      <span>AliaBeauty</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 3rem 0 3.5rem;">
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div style="text-align:center;">
+      <h1>Contáctanos</h1>
+      <p class="tagline">Estamos para ayudarte</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+
+    <div>
+      <h2>Información de contacto</h2>
+      <ul class="info-list">
+        <li><span class="label">Correo</span> <span>aliabeauty@gmail.com</span></li>
+        <li><span class="label">Dirección</span> <span>Calle 47A sur 31-86, Bogotá D.C.</span></li>
+        <li><span class="label">Barrio</span> <span>El Tunal</span></li>
+        <li><span class="label">Teléfono</span> <span>605 663 2627</span></li>
+        <li><span class="label">Celular</span> <span>302 215 1359</span></li>
+      </ul>
+
+      <div class="qr-box">
+        <div id="qr-code"></div>
+        <p>Escanea para visitar nuestro catálogo completo</p>
+        <p style="word-break:break-all;"><strong id="qr-url-label"></strong></p>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Gracias por escribirnos! Este formulario es una demo y aún no envía correos.');">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Enviar mensaje</button>
+      <p class="form-note">Formulario de demostración: para recibir mensajes reales, conéctalo a un servicio como Formspree o a tu propio backend.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>AliaBeauty</h4>
+      <p>Tu piel, nuestra pasión. Cuidado corporal para tu rutina diaria.</p>
+    </div>
+    <div>
+      <h4>Explora</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>aliabeauty@gmail.com</li>
+        <li>Calle 47A sur 31-86, Bogotá D.C.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">© 2026 AliaBeauty SAS. Todos los derechos reservados.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

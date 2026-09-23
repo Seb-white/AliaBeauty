@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos — AliaBeauty</title>
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-full.png" alt="Logo AliaBeauty">
+      <span>AliaBeauty</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 3rem 0 3.5rem;">
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div style="text-align:center;">
+      <h1>Catálogo</h1>
+      <p class="tagline">Gel de Baño · Mantequilla Corporal · Splash Corporal</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="placeholder-note">
+      📸 Las fotos de producto son marcadores de posición. Reemplaza los archivos en
+      <code>assets/img/products/</code> por las fotos reales cuando las tengas (mismo nombre de archivo, o actualiza el <code>src</code> en el HTML).
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="gel">Gel de Baño</button>
+      <button class="tab-btn" data-tab="mantequilla">Mantequilla Corporal</button>
+      <button class="tab-btn" data-tab="splash">Splash Corporal</button>
+    </div>
+
+    <!-- LÍNEA GEL DE BAÑO -->
+    <div id="gel" class="tab-panel active">
+      <div class="grid-3">
+        <div class="card">
+          <img src="assets/img/products/placeholder-gel.png" alt="Gel de Baño Lavanda">
+          <div class="card-body">
+            <span class="card-tag">Gel de Baño</span>
+            <h3>Lavanda Relajante</h3>
+            <p>Limpieza suave con aroma a lavanda, ideal para el final del día.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/products/placeholder-gel.png" alt="Gel de Baño Coco">
+          <div class="card-body">
+            <span class="card-tag">Gel de Baño</span>
+            <h3>Coco Tropical</h3>
+            <p>Aroma fresco y envolvente, para empezar el día con energía.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/products/placeholder-gel.png" alt="Gel de Baño Avena">
+          <div class="card-body">
+            <span class="card-tag">Gel de Baño</span>
+            <h3>Avena &amp; Miel</h3>
+            <p>Fórmula suave pensada para piel sensible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LÍNEA MANTEQUILLA CORPORAL -->
+    <div id="mantequilla" class="tab-panel">
+      <div class="grid-3">
+        <div class="card">
+          <img src="assets/img/products/placeholder-mantequilla.png" alt="Mantequilla Corporal Karité">
+          <div class="card-body">
+            <span class="card-tag">Mantequilla Corporal</span>
+            <h3>Karité Puro</h3>
+            <p>Hidratación profunda de textura rica para piel muy seca.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/products/placeholder-mantequilla.png" alt="Mantequilla Corporal Cacao">
+          <div class="card-body">
+            <span class="card-tag">Mantequilla Corporal</span>
+            <h3>Cacao &amp; Vainilla</h3>
+            <p>Aroma dulce y textura envolvente para el cuidado nocturno.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/products/placeholder-mantequilla.png" alt="Mantequilla Corporal Almendras">
+          <div class="card-body">
+            <span class="card-tag">Mantequilla Corporal</span>
+            <h3>Almendras Dulces</h3>
+            <p>Nutre e hidrata dejando la piel suave al tacto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LÍNEA SPLASH CORPORAL -->
+    <div id="splash" class="tab-panel">
+      <div class="grid-3">
+        <div class="card">
+          <img src="assets/img/products/placeholder-splash.png" alt="Splash Corporal Cítricos">
+          <div class="card-body">
+            <span class="card-tag">Splash Corporal</span>
+            <h3>Cítricos Frescos</h3>
+            <p>Fragancia ligera y refrescante, absorción rápida.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/products/placeholder-splash.png" alt="Splash Corporal Flores Blancas">
+          <div class="card-body">
+            <span class="card-tag">Splash Corporal</span>
+            <h3>Flores Blancas</h3>
+            <p>Aroma floral y delicado para perfumar la piel todo el día.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/products/placeholder-splash.png" alt="Splash Corporal Vainilla">
+          <div class="card-body">
+            <span class="card-tag">Splash Corporal</span>
+            <h3>Vainilla &amp; Almizcle</h3>
+            <p>Fragancia cálida y suave de larga duración.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>AliaBeauty</h4>
+      <p>Tu piel, nuestra pasión. Cuidado corporal para tu rutina diaria.</p>
+    </div>
+    <div>
+      <h4>Explora</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>aliabeauty@gmail.com</li>
+        <li>Calle 47A sur 31-86, Bogotá D.C.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">© 2026 AliaBeauty SAS. Todos los derechos reservados.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
